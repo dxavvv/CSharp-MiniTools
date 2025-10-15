@@ -13,7 +13,9 @@ Each project is designed to be simple, useful, and complete in one day, making t
 - **21Game** - simple 2 players console game.
 - **21Game vs AI** - 21 Game, player vs AI.
 - **CaesarCipher** - a tool for encrypting and decrypting messages using the Caesar cipher.
+- **Matrix Calculator** - addition and multiplication of matrices.
 - *(more tools would be added here over time)*
+
 
 
 
