@@ -11,6 +11,7 @@ Each project is designed to be simple, useful, and complete in one day, making t
 - **Text Analyzer** – analyzes text files or user input to count words, sentences, and frequently used words.  
 - **Calculator** – simple console calculator with basic math operations.
 - **21Game** - simple 2 players console game
-- **21Game vs PC** - to be added soon
-- *(more tools can be added here over time)*
+- **21Game vs AI** - 21 Game, player vs AI
+- *(more tools would be added here over time)*
+
 
