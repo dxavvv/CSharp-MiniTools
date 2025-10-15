@@ -6,7 +6,7 @@ namespace Game21
     {
         static void Main(string[] args)
         {
-            Console.Title = "Game 21 - Easy/Hard AI";
+            Console.Title = "Game 21 vs AI";
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("=== GAME 21 ===\n");
             Console.ResetColor();
@@ -18,8 +18,8 @@ namespace Game21
 
             // Mode selection
             Console.WriteLine("Select difficulty:");
-            Console.WriteLine("1 - Easy (AI plays randomly)");
-            Console.WriteLine("2 - Hard (AI starts and plays perfectly)");
+            Console.WriteLine("1 - Easy");
+            Console.WriteLine("2 - Hard");
             Console.Write("Your choice: ");
             string choice = Console.ReadLine();
 
@@ -40,7 +40,6 @@ namespace Game21
 
                 if (playerTurn)
                 {
-                    // Player move
                     Console.Write("Your turn. Enter a number (1-3): ");
                     string input = Console.ReadLine();
                     if (!int.TryParse(input, out move) || move < 1 || move > maxTake)
@@ -53,7 +52,6 @@ namespace Game21
                 }
                 else
                 {
-                    // AI move
                     if (hardMode)
                     {
                         // AI starts at 1, potem daje sumę = 1 mod 4
@@ -70,7 +68,6 @@ namespace Game21
                     }
                     else
                     {
-                        // Easy mode: random
                         move = rand.Next(1, maxTake + 1);
                     }
 
@@ -93,7 +90,7 @@ namespace Game21
                 playerTurn = !playerTurn;
             }
 
-            Console.WriteLine("Game over. Thanks for playing!");
+            Console.WriteLine("Game over.");
         }
     }
 }
